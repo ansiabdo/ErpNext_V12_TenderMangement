@@ -1,4 +1,5 @@
 {
+ "actions": [],
  "autoname": "Tender.#####",
  "creation": "2020-12-16 11:48:33.686894",
  "doctype": "DocType",
@@ -11,6 +12,7 @@
   "tender_discription",
   "client_details_section",
   "client_tender_ref",
+  "client_name",
   "client",
   "project_details_section",
   "project",
@@ -141,10 +143,16 @@
    "fieldtype": "Table",
    "label": "Tender Documents",
    "options": "Tender Documents"
+  },
+  {
+   "fieldname": "client_name",
+   "fieldtype": "Data",
+   "label": "Client Name"
   }
  ],
  "icon": "fa fa-check",
- "modified": "2020-12-16 17:02:39.419864",
+ "links": [],
+ "modified": "2021-07-07 20:41:40.380617",
  "modified_by": "Administrator",
  "module": "Tender Management",
  "name": "Tender",
