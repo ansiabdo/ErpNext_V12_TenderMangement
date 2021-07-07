@@ -13,7 +13,7 @@
  "is_standard": 1,
  "label": "Tender Management",
  "links": [],
- "modified": "2021-07-07 20:24:40.367496",
+ "modified": "2021-07-07 20:31:36.603202",
  "modified_by": "ansi@mutarreb.com",
  "module": "Tender Management",
  "name": "Tender Management",
@@ -25,6 +25,36 @@
    "doc_view": "List",
    "label": "Tender",
    "link_to": "Tender",
+   "type": "DocType"
+  },
+  {
+   "doc_view": "List",
+   "label": "Bill Of Material",
+   "link_to": "Bill Of Material",
+   "type": "DocType"
+  },
+  {
+   "doc_view": "",
+   "label": "Equipment Management",
+   "link_to": "Equipment Management",
+   "type": "DocType"
+  },
+  {
+   "doc_view": "",
+   "label": "Material Resource",
+   "link_to": "Material Resource",
+   "type": "DocType"
+  },
+  {
+   "doc_view": "",
+   "label": "Sub Contractor Management",
+   "link_to": "Sub Contractor Management",
+   "type": "DocType"
+  },
+  {
+   "doc_view": "",
+   "label": "Sub Contractor Management",
+   "link_to": "Sub Contractor Management",
    "type": "DocType"
   }
  ]
