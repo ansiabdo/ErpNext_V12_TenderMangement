@@ -13,7 +13,7 @@
  "is_standard": 1,
  "label": "Tender Management",
  "links": [],
- "modified": "2021-07-10 16:28:49.298757",
+ "modified": "2021-07-10 17:50:18.439788",
  "modified_by": "Administrator",
  "module": "Tender Management",
  "name": "Tender Management",
@@ -67,6 +67,12 @@
    "doc_view": "",
    "label": "Tender Type",
    "link_to": "Tender Type",
+   "type": "DocType"
+  },
+  {
+   "doc_view": "",
+   "label": "Tender Category",
+   "link_to": "Tender Category",
    "type": "DocType"
   }
  ]

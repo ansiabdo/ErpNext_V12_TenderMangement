@@ -1,5 +1,6 @@
 {
  "actions": [],
+ "autoname": "field:beneficiary_name",
  "creation": "2021-07-10 11:11:29.265992",
  "doctype": "DocType",
  "editable_grid": 1,
@@ -19,7 +20,8 @@
    "fieldtype": "Data",
    "in_list_view": 1,
    "label": "Beneficiary Name",
-   "reqd": 1
+   "reqd": 1,
+   "unique": 1
   },
   {
    "fieldname": "beneficiary_address",
@@ -55,7 +57,7 @@
  ],
  "index_web_pages_for_search": 1,
  "links": [],
- "modified": "2021-07-10 11:28:05.005958",
+ "modified": "2021-07-10 19:51:37.948961",
  "modified_by": "Administrator",
  "module": "Tender Management",
  "name": "Tender beneficiary",
@@ -70,6 +72,19 @@
    "read": 1,
    "report": 1,
    "role": "System Manager",
+   "share": 1,
+   "write": 1
+  },
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "Tender Administrator",
+   "select": 1,
    "share": 1,
    "write": 1
   }

@@ -1,30 +1,29 @@
 {
  "actions": [],
- "autoname": "field:tender_type",
- "creation": "2021-07-10 16:26:41.202262",
+ "autoname": "field:tender_category",
+ "creation": "2021-07-10 17:47:30.407996",
  "doctype": "DocType",
  "editable_grid": 1,
  "engine": "InnoDB",
  "field_order": [
-  "tender_type"
+  "tender_category"
  ],
  "fields": [
   {
-   "fieldname": "tender_type",
+   "fieldname": "tender_category",
    "fieldtype": "Data",
    "in_list_view": 1,
-   "in_standard_filter": 1,
-   "label": "Tender Type",
+   "label": "Tender Category",
    "reqd": 1,
    "unique": 1
   }
  ],
  "index_web_pages_for_search": 1,
  "links": [],
- "modified": "2021-07-10 19:45:33.100923",
+ "modified": "2021-07-10 19:46:44.947864",
  "modified_by": "Administrator",
  "module": "Tender Management",
- "name": "Tender Type",
+ "name": "Tender Category",
  "owner": "Administrator",
  "permissions": [
   {
@@ -53,9 +52,9 @@
    "write": 1
   }
  ],
- "search_fields": "tender_type",
+ "search_fields": "tender_category",
  "sort_field": "modified",
  "sort_order": "DESC",
- "title_field": "tender_type",
+ "title_field": "tender_category",
  "track_changes": 1
 }

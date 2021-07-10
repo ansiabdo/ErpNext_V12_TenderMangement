@@ -1,4 +1,5 @@
 {
+ "actions": [],
  "autoname": "M.#####",
  "creation": "2020-12-16 12:24:21.865255",
  "doctype": "DocType",
@@ -60,7 +61,8 @@
    "options": "Y\nN"
   }
  ],
- "modified": "2020-12-16 12:24:21.865255",
+ "links": [],
+ "modified": "2021-07-10 16:56:03.770865",
  "modified_by": "Administrator",
  "module": "Tender Management",
  "name": "Material Resource",
@@ -75,6 +77,20 @@
    "read": 1,
    "report": 1,
    "role": "System Manager",
+   "select": 1,
+   "share": 1,
+   "write": 1
+  },
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "Tender Administrator",
+   "select": 1,
    "share": 1,
    "write": 1
   }
