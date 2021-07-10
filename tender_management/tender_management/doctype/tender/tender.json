@@ -8,6 +8,7 @@
  "engine": "InnoDB",
  "field_order": [
   "tender_name",
+  "tender_type",
   "column_break_2",
   "closing_date",
   "tender_description_section",
@@ -148,17 +149,26 @@
   {
    "fieldname": "closing_date",
    "fieldtype": "Datetime",
+   "in_list_view": 1,
    "label": "Closing Date",
    "reqd": 1
   },
   {
    "fieldname": "column_break_2",
    "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "tender_type",
+   "fieldtype": "Link",
+   "in_list_view": 1,
+   "label": "Tender Type",
+   "options": "Tender Type",
+   "reqd": 1
   }
  ],
  "icon": "fa fa-check",
  "links": [],
- "modified": "2021-07-10 11:27:13.783755",
+ "modified": "2021-07-10 16:36:22.143882",
  "modified_by": "Administrator",
  "module": "Tender Management",
  "name": "Tender",
