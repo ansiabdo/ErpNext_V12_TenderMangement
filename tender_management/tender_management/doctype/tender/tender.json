@@ -7,12 +7,13 @@
  "editable_grid": 1,
  "engine": "InnoDB",
  "field_order": [
-  "tender_internal_ref",
+  "tender_name",
+  "column_break_2",
+  "closing_date",
   "tender_description_section",
   "tender_discription",
   "client_details_section",
   "client_tender_ref",
-  "client_name",
   "client",
   "project_details_section",
   "project",
@@ -31,13 +32,6 @@
   "tender_documents"
  ],
  "fields": [
-  {
-   "fieldname": "tender_internal_ref",
-   "fieldtype": "Data",
-   "in_list_view": 1,
-   "label": "Tender Internal Ref",
-   "reqd": 1
-  },
   {
    "collapsible": 1,
    "fieldname": "tender_description_section",
@@ -63,7 +57,7 @@
    "fieldname": "client",
    "fieldtype": "Link",
    "label": "Client",
-   "options": "Customer"
+   "options": "Tender beneficiary"
   },
   {
    "collapsible": 1,
@@ -145,14 +139,26 @@
    "options": "Tender Documents"
   },
   {
-   "fieldname": "client_name",
+   "fieldname": "tender_name",
    "fieldtype": "Data",
-   "label": "Client Name"
+   "in_list_view": 1,
+   "label": "Tender Name",
+   "reqd": 1
+  },
+  {
+   "fieldname": "closing_date",
+   "fieldtype": "Datetime",
+   "label": "Closing Date",
+   "reqd": 1
+  },
+  {
+   "fieldname": "column_break_2",
+   "fieldtype": "Column Break"
   }
  ],
  "icon": "fa fa-check",
  "links": [],
- "modified": "2021-07-07 20:41:40.380617",
+ "modified": "2021-07-10 11:27:13.783755",
  "modified_by": "Administrator",
  "module": "Tender Management",
  "name": "Tender",
