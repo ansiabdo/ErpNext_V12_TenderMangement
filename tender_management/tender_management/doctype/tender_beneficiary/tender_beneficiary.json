@@ -1,0 +1,80 @@
+{
+ "actions": [],
+ "creation": "2021-07-10 11:11:29.265992",
+ "doctype": "DocType",
+ "editable_grid": 1,
+ "engine": "InnoDB",
+ "field_order": [
+  "beneficiary_name",
+  "beneficiary_address",
+  "type",
+  "column_break_4",
+  "phone",
+  "contact_person",
+  "key_person"
+ ],
+ "fields": [
+  {
+   "fieldname": "beneficiary_name",
+   "fieldtype": "Data",
+   "in_list_view": 1,
+   "label": "Beneficiary Name",
+   "reqd": 1
+  },
+  {
+   "fieldname": "beneficiary_address",
+   "fieldtype": "Data",
+   "label": "Beneficiary Address"
+  },
+  {
+   "fieldname": "type",
+   "fieldtype": "Data",
+   "label": "Type"
+  },
+  {
+   "fieldname": "column_break_4",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "phone",
+   "fieldtype": "Data",
+   "label": "Phone"
+  },
+  {
+   "fieldname": "contact_person",
+   "fieldtype": "Link",
+   "label": "Contact Person",
+   "options": "Contact"
+  },
+  {
+   "fieldname": "key_person",
+   "fieldtype": "Link",
+   "label": "Key Person",
+   "options": "Contact"
+  }
+ ],
+ "index_web_pages_for_search": 1,
+ "links": [],
+ "modified": "2021-07-10 11:28:05.005958",
+ "modified_by": "Administrator",
+ "module": "Tender Management",
+ "name": "Tender beneficiary",
+ "owner": "Administrator",
+ "permissions": [
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "System Manager",
+   "share": 1,
+   "write": 1
+  }
+ ],
+ "sort_field": "modified",
+ "sort_order": "DESC",
+ "track_changes": 1
+}
