@@ -3,20 +3,22 @@
  "autoname": "field:tender_name",
  "creation": "2020-12-16 11:48:33.686894",
  "doctype": "DocType",
- "document_type": "Setup",
+ "document_type": "Document",
  "editable_grid": 1,
  "engine": "InnoDB",
  "field_order": [
   "tenders_details_section",
+  "client",
+  "tender_category",
   "tender_name",
   "tender_type",
-  "client",
+  "workflow_state",
   "column_break_2",
   "closing_date",
   "envelopes_opening_date",
   "city",
+  "status",
   "column_break_7",
-  "tender_category",
   "client_tender_ref",
   "tender_source",
   "tender_description_section",
@@ -35,7 +37,8 @@
   "project_cost",
   "project_location_section",
   "location",
-  "project_map"
+  "project_map",
+  "amended_from"
  ],
  "fields": [
   {
@@ -116,18 +119,22 @@
    "label": "Project Cost"
   },
   {
+   "collapsible": 1,
    "fieldname": "project_location_section",
    "fieldtype": "Section Break",
+   "hidden": 1,
    "label": "Project Location"
   },
   {
    "fieldname": "location",
    "fieldtype": "Long Text",
+   "hidden": 1,
    "label": "Location"
   },
   {
    "fieldname": "project_map",
    "fieldtype": "Geolocation",
+   "hidden": 1,
    "label": "Project Map"
   },
   {
@@ -206,11 +213,35 @@
    "fieldtype": "Select",
    "label": "Tender Source",
    "options": "\nDirect by Customer\nYemenHR.com\nTendersInfo.com\nTendersOfYemen.com\nOthers"
+  },
+  {
+   "fieldname": "status",
+   "fieldtype": "Select",
+   "label": "Status",
+   "options": "Draft\nOpen\nCanceled by Company\nCanceled by Customer\nDelivered\nNot Delivered\nLost\nCanceled\nWon",
+   "read_only": 1
+  },
+  {
+   "fieldname": "workflow_state",
+   "fieldtype": "Link",
+   "label": "Workflow State",
+   "options": "Workflow State",
+   "read_only": 1
+  },
+  {
+   "fieldname": "amended_from",
+   "fieldtype": "Link",
+   "label": "Amended From",
+   "no_copy": 1,
+   "options": "Tender",
+   "print_hide": 1,
+   "read_only": 1
   }
  ],
  "icon": "fa fa-check",
+ "is_submittable": 1,
  "links": [],
- "modified": "2021-07-10 21:21:08.731482",
+ "modified": "2021-07-17 18:21:45.654713",
  "modified_by": "Administrator",
  "module": "Tender Management",
  "name": "Tender",
@@ -225,22 +256,26 @@
    "read": 1,
    "report": 1,
    "role": "System Manager",
+   "select": 1,
    "share": 1,
+   "submit": 1,
    "write": 1
   },
   {
    "create": 1,
-   "delete": 1,
    "email": 1,
    "export": 1,
    "print": 1,
    "read": 1,
    "report": 1,
    "role": "Tender Administrator",
+   "select": 1,
    "share": 1,
+   "submit": 1,
    "write": 1
   },
   {
+   "create": 1,
    "email": 1,
    "export": 1,
    "print": 1,
@@ -248,7 +283,9 @@
    "report": 1,
    "role": "Tender Users",
    "select": 1,
-   "share": 1
+   "share": 1,
+   "submit": 1,
+   "write": 1
   }
  ],
  "quick_entry": 1,

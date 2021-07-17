@@ -57,7 +57,7 @@
  ],
  "index_web_pages_for_search": 1,
  "links": [],
- "modified": "2021-07-10 19:51:37.948961",
+ "modified": "2021-07-17 19:09:37.721051",
  "modified_by": "Administrator",
  "module": "Tender Management",
  "name": "Tender beneficiary",
@@ -84,6 +84,18 @@
    "read": 1,
    "report": 1,
    "role": "Tender Administrator",
+   "select": 1,
+   "share": 1,
+   "write": 1
+  },
+  {
+   "create": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "Tender Users",
    "select": 1,
    "share": 1,
    "write": 1
