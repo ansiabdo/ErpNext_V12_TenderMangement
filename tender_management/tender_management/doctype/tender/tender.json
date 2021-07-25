@@ -8,19 +8,25 @@
  "engine": "InnoDB",
  "field_order": [
   "tenders_details_section",
+  "tender_name",
   "client",
   "tender_category",
-  "tender_name",
   "tender_type",
-  "workflow_state",
+  "client_tender_ref",
   "column_break_2",
   "closing_date",
   "envelopes_opening_date",
   "city",
-  "status",
   "column_break_7",
-  "client_tender_ref",
   "tender_source",
+  "workflow_state",
+  "status",
+  "guarantee_details_section",
+  "guarantee_amount",
+  "guarantee_currency",
+  "column_break_18",
+  "guarantee_start_date",
+  "guarantee_end_date",
   "tender_description_section",
   "tender_discription",
   "tender_documents_section",
@@ -171,7 +177,6 @@
   {
    "fieldname": "tender_type",
    "fieldtype": "Link",
-   "in_list_view": 1,
    "in_standard_filter": 1,
    "label": "Tender Type",
    "options": "Tender Type",
@@ -179,10 +184,10 @@
   },
   {
    "fieldname": "tender_category",
-   "fieldtype": "Link",
+   "fieldtype": "Table MultiSelect",
    "in_standard_filter": 1,
    "label": "Tender Category",
-   "options": "Tender Category",
+   "options": "Tender Category Child",
    "reqd": 1
   },
   {
@@ -224,6 +229,8 @@
   {
    "fieldname": "workflow_state",
    "fieldtype": "Link",
+   "in_list_view": 1,
+   "in_standard_filter": 1,
    "label": "Workflow State",
    "options": "Workflow State",
    "read_only": 1
@@ -236,12 +243,44 @@
    "options": "Tender",
    "print_hide": 1,
    "read_only": 1
+  },
+  {
+   "fieldname": "guarantee_currency",
+   "fieldtype": "Link",
+   "label": "Guarantee Currency",
+   "options": "Currency"
+  },
+  {
+   "fieldname": "guarantee_details_section",
+   "fieldtype": "Section Break",
+   "label": "Guarantee Details"
+  },
+  {
+   "fieldname": "column_break_18",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "guarantee_start_date",
+   "fieldtype": "Date",
+   "label": "Guarantee Start Date",
+   "reqd": 1
+  },
+  {
+   "fieldname": "guarantee_end_date",
+   "fieldtype": "Date",
+   "label": "Guarantee End Date",
+   "reqd": 1
+  },
+  {
+   "fieldname": "guarantee_amount",
+   "fieldtype": "Currency",
+   "label": "Guarantee Amount"
   }
  ],
  "icon": "fa fa-check",
  "is_submittable": 1,
  "links": [],
- "modified": "2021-07-17 18:21:45.654713",
+ "modified": "2021-07-22 20:31:36.341559",
  "modified_by": "Administrator",
  "module": "Tender Management",
  "name": "Tender",
@@ -288,7 +327,6 @@
    "write": 1
   }
  ],
- "quick_entry": 1,
  "sort_field": "modified",
  "sort_order": "DESC",
  "track_changes": 1
