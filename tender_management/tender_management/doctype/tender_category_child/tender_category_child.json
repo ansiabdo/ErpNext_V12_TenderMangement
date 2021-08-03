@@ -17,7 +17,7 @@
    "in_standard_filter": 1,
    "label": "Tender Category",
    "options": "Tender Category",
-   "reqd": 1,
+   "reqd": 1
   }
  ],
  "index_web_pages_for_search": 1,
