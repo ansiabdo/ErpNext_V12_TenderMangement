@@ -1,0 +1,37 @@
+{
+ "actions": [],
+ "autoname": "field:tender_type",
+ "creation": "2021-07-20 22:23:13.703784",
+ "doctype": "DocType",
+ "editable_grid": 1,
+ "engine": "InnoDB",
+ "field_order": [
+  "tender_type"
+ ],
+ "fields": [
+  {
+   "fieldname": "tender_type",
+   "fieldtype": "Link",
+   "in_filter": 1,
+   "in_list_view": 1,
+   "in_standard_filter": 1,
+   "label": "Tender Category",
+   "options": "Tender Category",
+   "reqd": 1,
+  }
+ ],
+ "index_web_pages_for_search": 1,
+ "istable": 1,
+ "links": [],
+ "modified": "2021-08-03 17:19:09.337227",
+ "modified_by": "Administrator",
+ "module": "Tender Management",
+ "name": "Tender Category Child",
+ "owner": "Administrator",
+ "permissions": [],
+ "search_fields": "tender_type",
+ "sort_field": "modified",
+ "sort_order": "DESC",
+ "title_field": "tender_type",
+ "track_changes": 1
+}
