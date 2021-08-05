@@ -10,6 +10,7 @@
   "beneficiary_address",
   "type",
   "column_break_4",
+  "email",
   "phone",
   "contact_person",
   "key_person"
@@ -53,11 +54,16 @@
    "fieldtype": "Link",
    "label": "Key Person",
    "options": "Contact"
+  },
+  {
+   "fieldname": "email",
+   "fieldtype": "Data",
+   "label": "Email"
   }
  ],
  "index_web_pages_for_search": 1,
  "links": [],
- "modified": "2021-07-17 19:09:37.721051",
+ "modified": "2021-08-05 15:20:26.593935",
  "modified_by": "Administrator",
  "module": "Tender Management",
  "name": "Tender beneficiary",

@@ -217,7 +217,7 @@
    "fieldname": "tender_source",
    "fieldtype": "Select",
    "label": "Tender Source",
-   "options": "\nDirect by Customer\nYemenHR.com\nTendersInfo.com\nTendersOfYemen.com\nOthers"
+   "options": "\nDirect by Customer\nEmail\nAlThawrah Newsletter\nYemenHR.com\nTendersInfo.com\nTendersOfYemen.com\nOthers"
   },
   {
    "fieldname": "status",
@@ -280,7 +280,7 @@
  "icon": "fa fa-check",
  "is_submittable": 1,
  "links": [],
- "modified": "2021-07-27 00:17:08.230156",
+ "modified": "2021-08-05 15:36:27.642307",
  "modified_by": "Administrator",
  "module": "Tender Management",
  "name": "Tender",
@@ -301,6 +301,8 @@
    "write": 1
   },
   {
+   "amend": 1,
+   "cancel": 1,
    "create": 1,
    "email": 1,
    "export": 1,
