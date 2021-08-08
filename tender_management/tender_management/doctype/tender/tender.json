@@ -222,6 +222,8 @@
   {
    "fieldname": "status",
    "fieldtype": "Select",
+   "in_list_view": 1,
+   "in_standard_filter": 1,
    "label": "Status",
    "options": "Draft\nOpen\nCanceled by Company\nCanceled by Customer\nDelivered\nNot Delivered\nLost\nCanceled\nWon",
    "read_only": 1
@@ -280,7 +282,7 @@
  "icon": "fa fa-check",
  "is_submittable": 1,
  "links": [],
- "modified": "2021-08-05 15:36:27.642307",
+ "modified": "2021-08-07 18:42:59.835594",
  "modified_by": "Administrator",
  "module": "Tender Management",
  "name": "Tender",
