@@ -17,7 +17,10 @@
   "closing_date",
   "envelopes_opening_date",
   "city",
+  "employee",
+  "employee_name",
   "column_break_7",
+  "tender_fee",
   "tender_source",
   "workflow_state",
   "status",
@@ -277,12 +280,30 @@
    "fieldname": "guarantee_amount",
    "fieldtype": "Currency",
    "label": "Guarantee Amount"
+  },
+  {
+   "fieldname": "tender_fee",
+   "fieldtype": "Currency",
+   "label": "Tender Fee"
+  },
+  {
+   "fieldname": "employee",
+   "fieldtype": "Link",
+   "label": "Employee",
+   "options": "Employee"
+  },
+  {
+   "fetch_from": "employee.employee_name",
+   "fieldname": "employee_name",
+   "fieldtype": "Data",
+   "label": "Employee Name",
+   "read_only": 1
   }
  ],
  "icon": "fa fa-check",
  "is_submittable": 1,
  "links": [],
- "modified": "2021-08-07 18:42:59.835594",
+ "modified": "2021-08-24 11:23:56.343853",
  "modified_by": "Administrator",
  "module": "Tender Management",
  "name": "Tender",

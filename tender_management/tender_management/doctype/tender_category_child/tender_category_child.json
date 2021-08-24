@@ -18,12 +18,12 @@
    "label": "Tender Category",
    "options": "Tender Category",
    "reqd": 1,
-   "unique": 1
+   "unique": 0
   }
  ],
  "istable": 1,
  "links": [],
- "modified": "2021-08-03 22:13:35.132153",
+ "modified": "2021-08-23 12:03:03.479652",
  "modified_by": "Administrator",
  "module": "Tender Management",
  "name": "Tender Category Child",
