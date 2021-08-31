@@ -15,14 +15,15 @@
   "client_tender_ref",
   "column_break_2",
   "closing_date",
+  "workflow_state",
   "envelopes_opening_date",
   "city",
-  "employee",
-  "employee_name",
+  "require_bank_guarantee",
   "column_break_7",
   "tender_fee",
+  "employee",
+  "employee_name",
   "tender_source",
-  "workflow_state",
   "status",
   "guarantee_details_section",
   "guarantee_amount",
@@ -256,6 +257,7 @@
    "options": "Currency"
   },
   {
+   "depends_on": "require_bank_guarantee",
    "fieldname": "guarantee_details_section",
    "fieldtype": "Section Break",
    "label": "Guarantee Details"
@@ -298,12 +300,18 @@
    "fieldtype": "Data",
    "label": "Employee Name",
    "read_only": 1
+  },
+  {
+   "default": "0",
+   "fieldname": "require_bank_guarantee",
+   "fieldtype": "Check",
+   "label": "Require Bank Guarantee"
   }
  ],
  "icon": "fa fa-check",
  "is_submittable": 1,
  "links": [],
- "modified": "2021-08-24 11:23:56.343853",
+ "modified": "2021-08-30 22:22:57.181334",
  "modified_by": "Administrator",
  "module": "Tender Management",
  "name": "Tender",
