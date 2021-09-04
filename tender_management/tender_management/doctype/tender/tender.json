@@ -163,6 +163,7 @@
    "fieldname": "tender_name",
    "fieldtype": "Data",
    "label": "Tender Name",
+   "length": 200,
    "reqd": 1,
    "unique": 1
   },
@@ -311,7 +312,7 @@
  "icon": "fa fa-check",
  "is_submittable": 1,
  "links": [],
- "modified": "2021-08-30 22:22:57.181334",
+ "modified": "2021-09-03 23:03:59.367161",
  "modified_by": "Administrator",
  "module": "Tender Management",
  "name": "Tender",
@@ -370,7 +371,9 @@
    "share": 1
   }
  ],
+ "search_fields": "tender_name,tender_discription",
  "sort_field": "modified",
  "sort_order": "DESC",
+ "title_field": "tender_name",
  "track_changes": 1
 }

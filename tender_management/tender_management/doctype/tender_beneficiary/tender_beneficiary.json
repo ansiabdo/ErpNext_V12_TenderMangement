@@ -1,5 +1,6 @@
 {
  "actions": [],
+ "allow_rename": 1,
  "autoname": "field:beneficiary_name",
  "creation": "2021-07-10 11:11:29.265992",
  "doctype": "DocType",
@@ -63,7 +64,7 @@
  ],
  "index_web_pages_for_search": 1,
  "links": [],
- "modified": "2021-08-05 15:20:26.593935",
+ "modified": "2021-09-03 23:00:15.221707",
  "modified_by": "Administrator",
  "module": "Tender Management",
  "name": "Tender beneficiary",
