@@ -227,8 +227,6 @@
   {
    "fieldname": "status",
    "fieldtype": "Select",
-   "in_list_view": 1,
-   "in_standard_filter": 1,
    "label": "Status",
    "options": "Draft\nOpen\nCanceled by Company\nCanceled by Customer\nDelivered\nNot Delivered\nLost\nCanceled\nWon",
    "read_only": 1
@@ -312,7 +310,7 @@
  "icon": "fa fa-check",
  "is_submittable": 1,
  "links": [],
- "modified": "2021-09-11 16:46:48.779185",
+ "modified": "2021-09-26 18:55:58.935129",
  "modified_by": "Administrator",
  "module": "Tender Management",
  "name": "Tender",
@@ -377,6 +375,7 @@
   }
  ],
  "search_fields": "tender_name,tender_discription",
+ "show_name_in_global_search": 1,
  "sort_field": "modified",
  "sort_order": "DESC",
  "title_field": "tender_name",
