@@ -310,10 +310,11 @@
  "icon": "fa fa-check",
  "is_submittable": 1,
  "links": [],
- "modified": "2021-09-26 18:55:58.935129",
+ "modified": "2021-10-11 18:58:27.304177",
  "modified_by": "Administrator",
  "module": "Tender Management",
  "name": "Tender",
+ "name_case": "Title Case",
  "owner": "Administrator",
  "permissions": [
   {
@@ -379,5 +380,7 @@
  "sort_field": "modified",
  "sort_order": "DESC",
  "title_field": "tender_name",
- "track_changes": 1
+ "track_changes": 1,
+ "track_seen": 1,
+ "track_views": 1
 }
