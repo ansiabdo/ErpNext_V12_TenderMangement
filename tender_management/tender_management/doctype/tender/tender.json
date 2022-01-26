@@ -21,7 +21,6 @@
   "require_bank_guarantee",
   "column_break_7",
   "tender_fee",
-  "employee",
   "employee_name",
   "tender_source",
   "status",
@@ -33,20 +32,6 @@
   "guarantee_end_date",
   "tender_description_section",
   "tender_discription",
-  "tender_documents_section",
-  "tender_documents",
-  "project_details_section",
-  "project",
-  "project_closing_date",
-  "briefing_date",
-  "date_submitted",
-  "follow_up_date",
-  "column_break_13",
-  "project_duration",
-  "project_value",
-  "project_cost",
-  "project_location_section",
-  "location",
   "project_map",
   "amended_from"
  ],
@@ -77,87 +62,10 @@
    "reqd": 1
   },
   {
-   "collapsible": 1,
-   "fieldname": "project_details_section",
-   "fieldtype": "Section Break",
-   "label": "Project Details"
-  },
-  {
-   "fieldname": "project",
-   "fieldtype": "Link",
-   "label": "Project",
-   "options": "Project"
-  },
-  {
-   "fieldname": "project_closing_date",
-   "fieldtype": "Datetime",
-   "label": "Project Closing Date"
-  },
-  {
-   "fieldname": "briefing_date",
-   "fieldtype": "Datetime",
-   "label": "Briefing Date"
-  },
-  {
-   "fieldname": "date_submitted",
-   "fieldtype": "Datetime",
-   "label": "Date Submitted"
-  },
-  {
-   "fieldname": "follow_up_date",
-   "fieldtype": "Datetime",
-   "label": "Follow up Date"
-  },
-  {
-   "fieldname": "column_break_13",
-   "fieldtype": "Column Break"
-  },
-  {
-   "fieldname": "project_duration",
-   "fieldtype": "Data",
-   "label": "Project Duration"
-  },
-  {
-   "fieldname": "project_value",
-   "fieldtype": "Float",
-   "label": "Project Value",
-   "precision": "2"
-  },
-  {
-   "fieldname": "project_cost",
-   "fieldtype": "Currency",
-   "label": "Project Cost"
-  },
-  {
-   "collapsible": 1,
-   "fieldname": "project_location_section",
-   "fieldtype": "Section Break",
-   "hidden": 1,
-   "label": "Project Location"
-  },
-  {
-   "fieldname": "location",
-   "fieldtype": "Long Text",
-   "hidden": 1,
-   "label": "Location"
-  },
-  {
    "fieldname": "project_map",
    "fieldtype": "Geolocation",
    "hidden": 1,
    "label": "Project Map"
-  },
-  {
-   "collapsible": 1,
-   "fieldname": "tender_documents_section",
-   "fieldtype": "Section Break",
-   "label": "Tender Documents"
-  },
-  {
-   "fieldname": "tender_documents",
-   "fieldtype": "Table",
-   "label": "Tender Documents",
-   "options": "Tender Documents"
   },
   {
    "fieldname": "tender_name",
@@ -234,7 +142,6 @@
   {
    "fieldname": "workflow_state",
    "fieldtype": "Link",
-   "in_list_view": 1,
    "in_standard_filter": 1,
    "label": "Workflow State",
    "options": "Workflow State",
@@ -288,12 +195,6 @@
    "label": "Tender Fee"
   },
   {
-   "fieldname": "employee",
-   "fieldtype": "Link",
-   "label": "Employee",
-   "options": "Employee"
-  },
-  {
    "fetch_from": "employee.employee_name",
    "fieldname": "employee_name",
    "fieldtype": "Data",
@@ -310,7 +211,7 @@
  "icon": "fa fa-check",
  "is_submittable": 1,
  "links": [],
- "modified": "2021-10-11 18:58:27.304177",
+ "modified": "2022-01-08 16:28:16.084165",
  "modified_by": "Administrator",
  "module": "Tender Management",
  "name": "Tender",
